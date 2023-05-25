@@ -30,7 +30,7 @@ import java.text.DecimalFormat;
 public class ViewWeather extends AppCompatActivity {
     private PrefManager prefManager;
     private final String url = "https://api.openweathermap.org/data/2.5/weather";
-    private final String appid = "f5b3b155236aa8d578a01f09f3e38ff9";
+    private final String appid = "Api-Key";
     DecimalFormat df = new DecimalFormat("#.##");
     DecimalFormat dfm = new DecimalFormat("#");
     String city ,country ;
