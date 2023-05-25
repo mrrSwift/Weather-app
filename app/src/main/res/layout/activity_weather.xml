@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="#D6F2FF"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Search"
+        android:textColor="#000"
+        android:layout_marginBottom="40dp"
+        android:textSize="40sp" />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etCity"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:background="@drawable/txtshape"
+            android:paddingVertical="10dp"
+            android:gravity="center"
+            android:textColorHint="#000"
+            android:textColor="#000"
+            android:hint="Enter City Name"
+            android:inputType="textPersonName" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etCountry"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:paddingVertical="10dp"
+            android:background="@drawable/txtshape"
+            android:gravity="center"
+            android:textColorHint="#000"
+            android:textColor="#000"
+            android:hint="Enter Country Code (Optional)"
+            android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLat"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:background="@drawable/txtshape"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:hint="Enter Latitude"
+        android:visibility="invisible"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLon"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:background="@drawable/txtshape"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:visibility="invisible"
+        android:hint="Enter Longitude"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/cbCod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:buttonTint="#03A9F4"
+        android:text="Search with coordinates" />
+
+    <Button
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGet"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btnshape"
+            android:textColor="@android:color/white"
+            android:text="Save"
+            app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btnGps"
+        android:layout_width="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btnshape"
+        android:text="Search with GPS"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:backgroundTint="@null" />
+
+
+</LinearLayout>
