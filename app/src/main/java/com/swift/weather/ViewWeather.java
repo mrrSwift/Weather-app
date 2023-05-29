@@ -126,6 +126,8 @@ public class ViewWeather extends AppCompatActivity {
         }
 
 
+        
+        
             StringRequest stringRequest = new StringRequest(Request.Method.POST, tempUrl, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
@@ -184,7 +186,7 @@ public class ViewWeather extends AppCompatActivity {
 
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(getApplicationContext(), "Can't found Or Network Error", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Can't found Or Network Error ", Toast.LENGTH_LONG).show();
                     prefManager.putCod(false);
                     prefManager.delete();
                     startActivity(new Intent(ViewWeather.this, Weather.class));
