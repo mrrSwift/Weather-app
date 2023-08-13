@@ -1,9 +1,9 @@
 # Weather-app
-Primitive App with Android and Java studio system.
+Primitive App with Android studio and Java.
 
 A project for University.
 
-If you got Issues with the Layout or if the Gradle doesn't Sync, Copy the codes inside the files
+If you got Issues with the Layout or if the Gradle doesn't Sync, Copy the codes inside the your files
 
 after that You need an API key
 
